@@ -18,7 +18,8 @@
                 "install -Dm755 bin/fogpanther bin/fogpanther-thumbnailer -t /app/bin/",
                 "install -Dm644 LICENSE -t /app/share/licenses/com.fogpanther.FogPanther/",
                 "cp -a lib/. /app/lib/",
-                "cp -a share/. /app/share/"
+                "cp -a share/. /app/share/",
+                "sed -i 's|https://github.com/fogpanther/fogpanther/issues|https://fogpanther.com/support|' /app/share/metainfo/com.fogpanther.FogPanther.metainfo.xml"
             ],
             "sources": [
                 {
