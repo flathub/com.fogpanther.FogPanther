@@ -24,14 +24,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.0-1-x86_64.tar.xz",
-                    "sha256": "042058ca3426da699b379df9ae5eaba61038daf9538b5fa683acf9c8757dd078",
+                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.1-1-x86_64.tar.xz",
+                    "sha256": "57c31928dc2ada3d5216af89c952549d380b1ed0d05dfd381072e8523b925258",
                     "only-arches": ["x86_64"]
                 },
                 {
                     "type": "archive",
-                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.0-1-aarch64.tar.xz",
-                    "sha256": "81c0ac6a6d9c9c3fc2eb57b92cda74003c11f3adff986c4a8bf67ff51e4b847c",
+                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.1-1-aarch64.tar.xz",
+                    "sha256": "08fed89509d50ba21cf8638f3173d5f170c72e2d1c0ae73bdbd3a79f2d4d5bef",
                     "only-arches": ["aarch64"]
                 }
             ]
