@@ -11,7 +11,10 @@
         "--socket=wayland",
         "--socket=cups",
         "--device=dri",
-        "--filesystem=home:rw",
+        "--filesystem=xdg-pictures:rw",
+        "--filesystem=xdg-documents:rw",
+        "--filesystem=xdg-download:rw",
+        "--filesystem=xdg-desktop:rw",
         "--filesystem=/run/media",
         "--filesystem=/media",
         "--env=GDK_PIXBUF_MODULE_FILE=/app/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache"
