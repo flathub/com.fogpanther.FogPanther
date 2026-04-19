@@ -6,9 +6,15 @@
     "command": "fogpanther",
     "finish-args": [
         "--share=ipc",
+        "--share=network",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--device=dri"
+        "--socket=cups",
+        "--device=dri",
+        "--filesystem=host:rw",
+        "--filesystem=/run/media",
+        "--filesystem=/media",
+        "--env=GDK_PIXBUF_MODULE_FILE=/app/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache"
     ],
     "modules": [
         {
@@ -16,22 +22,22 @@
             "buildsystem": "simple",
             "build-commands": [
                 "install -Dm755 bin/fogpanther bin/fogpanther-thumbnailer -t /app/bin/",
-                "install -Dm644 LICENSE -t /app/share/licenses/com.fogpanther.FogPanther/",
                 "cp -a lib/. /app/lib/",
                 "cp -a share/. /app/share/",
-                "sed -i 's|https://github.com/fogpanther/fogpanther/issues|https://fogpanther.com/support|' /app/share/metainfo/com.fogpanther.FogPanther.metainfo.xml"
+                "gdk-pixbuf-query-loaders /app/lib/gdk-pixbuf-2.0/2.10.0/loaders/*.so /usr/lib/*/gdk-pixbuf-2.0/2.10.0/loaders/*.so > /app/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache",
+                "sed -i 's|;photoshop;gimp;|;|' /app/share/applications/com.fogpanther.FogPanther.desktop"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.1-1-x86_64.tar.xz",
-                    "sha256": "57c31928dc2ada3d5216af89c952549d380b1ed0d05dfd381072e8523b925258",
+                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.2-2-x86_64.tar.xz",
+                    "sha256": "157c3f0c9daa450f692d12241edab837db5e743c678d8435e6d663b807a1340e",
                     "only-arches": ["x86_64"]
                 },
                 {
                     "type": "archive",
-                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.1-1-aarch64.tar.xz",
-                    "sha256": "08fed89509d50ba21cf8638f3173d5f170c72e2d1c0ae73bdbd3a79f2d4d5bef",
+                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.2-2-aarch64.tar.xz",
+                    "sha256": "9c3063fdf2737ef52f334b0e9fa07cc897ef761b59b5c0237b2f3e1c54d6a450",
                     "only-arches": ["aarch64"]
                 }
             ]
