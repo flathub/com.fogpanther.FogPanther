@@ -11,10 +11,7 @@
         "--socket=wayland",
         "--socket=cups",
         "--device=dri",
-        "--filesystem=xdg-pictures:rw",
-        "--filesystem=xdg-documents:rw",
-        "--filesystem=xdg-download:rw",
-        "--filesystem=xdg-desktop:rw",
+        "--filesystem=home",
         "--filesystem=/run/media",
         "--filesystem=/media",
         "--env=GDK_PIXBUF_MODULE_FILE=/app/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache"
@@ -33,14 +30,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.4-1-x86_64.tar.xz",
-                    "sha256": "267ed8a516c633021d2296ef32d61d351b1b733b675433e826a384ad2cb9c7bc",
+                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.4-2-x86_64.tar.xz",
+                    "sha256": "f42309e1f9febb2cdf3f47377b66621364c7d005137657704e5b7ce18db5c1de",
                     "only-arches": ["x86_64"]
                 },
                 {
                     "type": "archive",
-                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.4-1-aarch64.tar.xz",
-                    "sha256": "f0bcfa888ea95f277df9feecbc8f45ac74ca6193ad8920802703fc9c75b144fe",
+                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.4-2-aarch64.tar.xz",
+                    "sha256": "55185a9eaac9538a54e61201b9fc6e6d3c54e2647775f2ab30d64d5fcab69b7d",
                     "only-arches": ["aarch64"]
                 }
             ]
