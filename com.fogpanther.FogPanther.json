@@ -4,6 +4,7 @@
     "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "fogpanther",
+    "tags": ["proprietary"],
     "finish-args": [
         "--share=ipc",
         "--share=network",
