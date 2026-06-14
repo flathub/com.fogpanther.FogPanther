@@ -1,7 +1,7 @@
 {
     "app-id": "com.fogpanther.FogPanther",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "fogpanther",
     "finish-args": [
@@ -33,14 +33,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.4-1-x86_64.tar.xz",
-                    "sha256": "267ed8a516c633021d2296ef32d61d351b1b733b675433e826a384ad2cb9c7bc",
+                    "url": "https://www.fogpanther.com/releases/fogpanther-0.8.0-1-x86_64.tar.xz",
+                    "sha256": "4a67704aa511ff89c5772f70f3ed50170114fbbb05d938f6a3800ef7cea11b28",
                     "only-arches": ["x86_64"]
                 },
                 {
                     "type": "archive",
-                    "url": "https://www.fogpanther.com/releases/fogpanther-0.7.4-1-aarch64.tar.xz",
-                    "sha256": "f0bcfa888ea95f277df9feecbc8f45ac74ca6193ad8920802703fc9c75b144fe",
+                    "url": "https://www.fogpanther.com/releases/fogpanther-0.8.0-1-aarch64.tar.xz",
+                    "sha256": "03c939da8d981c369fdb3b5163fc611af54668429cba3b2d051ee0158bdd1cc2",
                     "only-arches": ["aarch64"]
                 }
             ]
