@@ -1,7 +1,7 @@
 {
     "app-id": "com.fogpanther.FogPanther",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "command": "fogpanther",
     "finish-args": [
@@ -27,20 +27,22 @@
                 "install -Dm755 bin/fogpanther bin/fogpanther-thumbnailer -t /app/bin/",
                 "cp -a lib/. /app/lib/",
                 "cp -a share/. /app/share/",
+                "mkdir -p /app/share/licenses/com.fogpanther.FogPanther",
+                "cp -a share/licenses/fogpanther/. /app/share/licenses/com.fogpanther.FogPanther/",
                 "gdk-pixbuf-query-loaders /app/lib/gdk-pixbuf-2.0/2.10.0/loaders/*.so /usr/lib/*/gdk-pixbuf-2.0/2.10.0/loaders/*.so > /app/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache",
                 "sed -i 's|;photoshop;gimp;|;|' /app/share/applications/com.fogpanther.FogPanther.desktop"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.fogpanther.com/releases/fogpanther-0.8.1-1-x86_64.tar.xz",
-                    "sha256": "0770951a1a25f5b39c76f5b21ffc2bfe98ca8939e630a9c166ea0a22ffeade1e",
+                    "url": "https://www.fogpanther.com/releases/fogpanther-0.8.2-1-x86_64.tar.xz",
+                    "sha256": "0cc221f203d42ec795324268cbf2ac1932803fd8883123e8f95016e42e534bb3",
                     "only-arches": ["x86_64"]
                 },
                 {
                     "type": "archive",
-                    "url": "https://www.fogpanther.com/releases/fogpanther-0.8.1-1-aarch64.tar.xz",
-                    "sha256": "0f9c47229f1611944c78d9f0091c8d43e9e4b059015bbaeb578200c3bdae8218",
+                    "url": "https://www.fogpanther.com/releases/fogpanther-0.8.2-1-aarch64.tar.xz",
+                    "sha256": "1c3bded921a259ad07d9011bae645da8d084d88c94ae4e33a41f1e5c0436d1e0",
                     "only-arches": ["aarch64"]
                 }
             ]
