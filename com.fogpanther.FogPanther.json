@@ -4,6 +4,7 @@
     "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "command": "fogpanther",
+    "appdata-license": "LicenseRef-proprietary=https://fogpanther.com/EULA.txt",
     "finish-args": [
         "--share=ipc",
         "--share=network",
